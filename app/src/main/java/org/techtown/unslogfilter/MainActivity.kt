@@ -117,7 +117,7 @@ class MainActivity : AppCompatActivity() {
             for (file in files) {
                 val lines = file.readLines()
                 for (line in lines) {
-                    if (code == "log/00") {
+                    if (code == "00") {
                         if (line.contains("mns_dispush_004")) {
                             list.add(line.replace(Regex("""\+0900 - debug.*?bswrHedrRmrkVl\":\"\"\},"""), ""))
                         }
