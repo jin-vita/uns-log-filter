@@ -122,7 +122,7 @@ class MainActivity : AppCompatActivity() {
                             list.add(line.replace(Regex("""\+0900 - debug.*?bswrHedrRmrkVl\":\"\"\},"""), ""))
                         }
                     } else if (line.contains("mns_dispush_004") &&
-                        (line.contains(""""oprmCd":"E$code"""") || line.contains(""""oprmCd":"F${codeInput.text.trim()}""""))
+                        (line.contains(""""oprmCd":"E$code"""") || line.contains(""""oprmCd":"F$code""""))
                     ) {
                         list.add(line.replace(Regex("""\+0900 - debug.*?bswrHedrRmrkVl\":\"\"\},"""), ""))
                     }
